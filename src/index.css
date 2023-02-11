@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    box-shadow: 0 4px 10px -2px rgb(211, 211, 211);
+    padding: 1em 0 1em 2em;
+    display: flex;
+    align-items: center;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em 1.5em 1.5em 1.5em;
+}
+
+.hero-container>img {
+    padding: 0 1em 0 1em;
+}
+
+.hero-container>h1 {
+    margin: 0.5em 0 0.25em 0;
+    font-size: 2rem;
+}
+
+.hero-container>span {
+    line-height: 1.25em;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 0 1.5em 1em 1.5em;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    position: relative;
+}
+
+.card>.profile-img {
+    height: 250px;
+    width: 185px;
+    border-radius: 10px;
+}
+
+.card>span {
+    font-size: 0.8em;
+}
+
+.card-badge {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.reviews {
+    padding: 0.25em 0 0.25em 0;
+    display: flex;
+    align-items: center;
+}
+
+.reviews>.star-img {
+    height: 15px;
+    width: 15px;
+}
+
+.reviews>span {
+    font-size: 0.8em;
+    padding: 0.25em 0 0 0.5em;
+}
